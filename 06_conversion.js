@@ -42,3 +42,101 @@ console.log(`number to string ${result} and it's type ${typeof result}`);
 var num6 = true; 
 var result =  String(num6);
 console.log(`number to string ${result} and it's type ${typeof result}`);
+
+
+
+var result = `3` + 2;
+console.log(result); //"32"
+
+var result = `3` + true;
+console.log(result); //"3true"
+
+var reult = `3` + undefined;
+console.log(result); //"3undefined"
+
+var reult = `3` + null;
+console.log(result); //"3null"
+
+
+ 
+ var result = `4` - true;
+console.log(result); //3
+
+var result = `4` + true;
+console.log(result); //5
+
+var result = `4` + false;
+console.log(result); //4
+
+
+ var result = `4` - `2`;
+ console.log(result); //2
+
+
+ var result = `4` - 2;
+ console.log(result); //2
+
+ var result = `4`  * `2`;
+ console.log(result); //8
+
+ var result = `4`  /  `2`;
+ console.log(result); //8
+
+
+ var result = 4 + undefined;
+ console.log(result); //NaN
+
+ var result = 4 - undefined;
+ console.log(result); //NaN
+
+ var result = true + undefined;
+ console.log(result); //NaN
+
+
+ var result = null + undefined;
+ console.log(result); //NaN
+
+
+ var result = Number(`324`);
+ console.log(result); //324
+
+ var result = Number(`324e-1`);
+ console.log(result); //32.4
+
+
+ //boolean to number
+
+ var result = Number(true);
+ console.log(result); //1
+
+
+ var result = Number(false);
+ console.log(result); //0
+
+ var result = Number(`hello`);
+ console.log(result); //NaN
+
+
+ var numberInString = "100";
+ console.log(typeof numberInString)
+
+ var myNumber = +numberInString;
+ console.log(typeof myNumber)
+
+ var myNumber = 100;
+ console.log(typeof myNumber); //number
+ var afterConversion = myNumber.toString();
+ console.log(typeof afterConversion); //string
+
+
+
+
+
+
+
+
+
+
+
+
+
