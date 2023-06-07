@@ -1,17 +1,3 @@
-const array = [2, 3, 5,  6,  7,  9 ];
-// const arrayTransformed = [4, 9, 25, 36, 49, 81 ];
-const arrayTransformed= [];
-array.forEach( (element)=> {
-    arrayTransformed.push(element*element);
-});
-console.log(arrayTransformed);
-console.log("======== using map()  ========");
-const arrayTrans = array.map( (element) => {
-    return element*element;
-} );
-console.log(arrayTrans);
-
-
 class Employee {
     constructor(emp_id, emp_name, emp_dept, emp_salary, emp_company){
         this.emp_id = emp_id;
@@ -30,16 +16,32 @@ const emp_viny = new Employee(88, "Vinayak", "IT", 75000, "TCS");
 const emp_mahi = new Employee(99, "Mahesh", "HR", 85000, "Infy");
 
 const array_employees = [emp_anil, emp_radha, emp_rishi, emp_sonali, emp_monika, emp_viny, emp_mahi];
-// const empNames = ["Anil", "Radha", "Rishi", "Sonali"];
-// Get the list of employee names
-console.log("======== Get the list of employee names ========");
-// const empNames = [];
-// array_employees.forEach( (employee)=> {
-//     empNames.push(employee.emp_name);
-// }  );
-// console.log(empNames);
+
+
+console.log("=============================1) List of all employee names====================================");
+
 
 const empNames = array_employees.map( (employee)=> {
     return employee.emp_name;
 } );
 console.log(empNames);
+
+
+
+console.log("=============================1) List of all departments of employee ====================================");
+
+
+const deptNames = array_employees.map( (employee)=> {
+    return employee.emp_dept;
+} );
+console.log(deptNames);
+
+
+console.log("=============================1) List of all id's of employee ====================================");
+
+
+const empId = array_employees.map( (employee)=> {
+    return employee.emp_id;
+} );
+console.log(empId);
+
