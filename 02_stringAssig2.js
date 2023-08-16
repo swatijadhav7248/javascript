@@ -43,7 +43,7 @@ console.log("First character of string:",charAtZeroIndex,"last character of stri
 console.log("/-------------------------------------------------------------------------------/");
 
 
-var trimmedString = string.split("");
+var trimmedString = string.split(" ");
 console.log(trimmedString);
 console.log("Total number of words:",trimmedString.length);
 

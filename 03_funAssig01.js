@@ -56,12 +56,13 @@ var valueOne=10.23;
 var valueTwo=600;
 var valueThree=40;
 
-function addThreeValues(valueOne,valueTwo,valueThree) {//Arguments: valueOne=10.23 valueTwo=600 valueThree=40;
+function addThreeNumbers(valueOne,valueTwo,valueThree) {//Arguments: valueOne=10.23 valueTwo=600 valueThree=40;
+    var result = valueOne+valueTwo+valueThree;
     console.log("Addition of three numbers:");
     console.log("valueOne=10.23,valueTwo=600,valueThree=40");
-    console.log("Result is=650.23");
+    console.log(`Result is: ${result}`);
 }
-addThreeValues(valueOne,valueTwo,valueThree);
+addThreeNumbers(valueOne,valueTwo,valueThree);
 
 
 
@@ -74,9 +75,10 @@ var valueThree="Morning";
 
 
 function addThreeValues(valueOne,valueTwo,valueThree) { //Arguments: valueOne=Hello valueTwo=Good valueThree=Morning;
+    var result=valueOne+valueTwo+valueThree;
     console.log("Addition of three values:");
     console.log("valueOne=Hello valueTwo=Good valueThree=Morning");
-    console.log("Result is=Hello Good Morning");
+    console.log(`Result is= ${result}`);
 }
 
 addThreeValues(valueOne,valueTwo,valueThree);
